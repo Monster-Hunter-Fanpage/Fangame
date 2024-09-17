@@ -3,22 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Site Title</title>
+    <title>Home | Your Site Title</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Your Site Name</h1>
-            <nav>
-                <ul>
-                    <li><a href="#section1">Home</a></li>
-                    <li><a href="#section2">Features</a></li>
-                    <li><a href="#section3">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div id="header-placeholder"></div>
     
     <main>
         <section id="section1">
@@ -37,11 +26,22 @@
         </section>
     </main>
     
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-            <p><a href="https://github.com/yourusername/yourrepo">GitHub Repository</a></p>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Function to load HTML content into a specified element
+        function loadHTML(elementId, url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Error loading HTML:', error));
+        }
+
+        // Load header and footer
+        loadHTML('header-placeholder', 'header.html');
+        loadHTML('footer-placeholder', 'footer.html');
+    </script>
 </body>
 </html>
