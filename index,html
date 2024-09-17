@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Site Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Talisman Generator</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="section1">
+            <h2>Introduction</h2>
+            <p>Welcome to the Talisman Generator! Use the tools below to generate talismans based on different probabilities.</p>
+        </section>
+        
+        <section id="section2">
+            <h2>Talisman Generator</h2>
+            <!-- Add your talisman generator code or include it from an external file -->
+            <div id="talisman-generator">
+                <!-- Example content, replace with your own -->
+                <button id="pawn-talisman">Generate Pawn Talisman</button>
+                <button id="bishop-talisman">Generate Bishop Talisman</button>
+                <!-- More buttons as needed -->
+            </div>
+        </section>
+        
+        <section id="section3">
+            <h2>About</h2>
+            <p>This site is a tool for generating talismans with various probabilities. Learn more about the different types and their effects.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+    
+    <script src="MainSkillRandom.js"></script>
+    <script src="BonusRandom.js"></script>
+</body>
+</html>
