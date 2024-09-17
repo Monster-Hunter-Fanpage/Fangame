@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -10,10 +11,17 @@ body {
     margin: 0 auto;
 }
 
+/* Header styling */
 header {
-    background-color: #333;
-    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0; /* Gray background */
+    color: #333;
     padding: 1rem 0;
+    z-index: 1000; /* Ensure header is above other content */
+    border-bottom: 1px solid #ddd; /* Optional: adds a border for better separation */
 }
 
 header h1 {
@@ -26,6 +34,7 @@ nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
+    margin: 0;
 }
 
 nav ul li {
@@ -34,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
 }
 
@@ -42,18 +51,14 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Main content area */
+main {
+    padding-top: 80px; /* Adjust based on header height to avoid content overlap */
+}
+
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #f0f0f0; /* Gray background */
+    color: #333;
     padding: 1rem 0;
     text-align: center;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
