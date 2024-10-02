@@ -1,72 +1,47 @@
-/* General Styling */
+/* General page styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header and main container with side padding */
+.header-container,
+main,
+.footer-container {
     padding-left: 15%;
     padding-right: 15%;
 }
 
-/* Header Styling */
-header {
-    background-color: #f0f0f0; /* Light gray background */
-    padding-left: 15%;
-    padding-right: 15%;
-    border-bottom: 1px solid #ddd;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-/* Title Section */
+/* Title section styling */
 .title-section {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Arrange elements in a row */
+    align-items: center; /* Vertically center the text */
+    gap: 10px; /* Adjust the space between elements */
 }
 
 .title-section h1 {
     margin: 0;
     font-size: 1.8rem;
-    color: #333;
 }
 
-.title-section .subtitle {
-    font-size: 1rem;
-    color: #666;
+.separator {
+    margin: 0 10px;
+    font-size: 1.8rem; /* Match the size of the h1 elements */
+    color: #666; /* Gray color for the separator */
 }
 
-/* Button Section */
+/* General button styling */
 .button-section {
     display: flex;
     gap: 10px; /* Space between buttons */
 }
 
-.header-btn {
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.header-btn:hover {
-    background-color: #555; /* Slightly lighter on hover */
-}
-
-/* Make space for the fixed header */
-main {
-    padding-top: 100px; /* Adjust to match header height */
-    padding-left: 15%;
-    padding-right: 15%;
+/* Footer styling */
+.footer-container {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 1rem 0;
+    border-top: 1px solid #ddd;
+    text-align: center;
 }
